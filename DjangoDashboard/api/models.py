@@ -29,3 +29,6 @@ class BaseURL(models.Model):
 
     def __str__(self):
         return self.baseUrl
+
+    def getBaseURL(self):
+        return BaseURL.objects.create(baseUrl="localhost")
